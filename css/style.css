@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .main-container {
@@ -29,6 +30,59 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+ul { 
+    margin:0 
+}
+
+/****** Navigation Bar ***********/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.logo-header {
+    display: flex;
+    align-items: center;
+}
+
+.logo-header img {
+    width: 60px;
+    height: 19px;
+}
+
+.navigation-header ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+
+.navigation-header ul li {
+    padding: 15px;
+}
+
+.navigation-header li:hover {
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
+}
+
+/****** End Navigation Bar ******/ 
+
+
+/****** Search Container ******/
+
+.search-container {
+
+}
+
+.search-title h1 {
+    font-size: 22px;
+}
+
+/****** End Search Container ******/
+
 
 .section-title {
     margin: 0;
