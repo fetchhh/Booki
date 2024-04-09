@@ -147,6 +147,10 @@ nav {
   font-weight: bold;
 }
 
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
 /*********** Filters ***********/
 
 .search-filters {
