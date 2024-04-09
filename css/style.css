@@ -1,4 +1,4 @@
-/****** General ***********/
+/*********** General ***********/
 * {
   font-family: "Raleway", sans-serif;
 }
@@ -36,9 +36,9 @@ ul {
   margin: 0;
 }
 
-/****** Header *******/
+/*********** Header ***********/
 
-/****** Navigation Bar ***********/
+/*********** Navigation Bar ***********/
 
 nav {
   display: flex;
@@ -72,7 +72,7 @@ nav {
   border-top: 2px solid var(--main-color);
 }
 
-/****** Search Container ******/
+/*********** Search Container ***********/
 
 .search-container {
   display: flex;
@@ -86,7 +86,7 @@ nav {
   font-size: 22px;
 }
 
-/****** Search Bar ******/
+/*********** Search Bar ***********/
 
 .search-bar-wrapper {
   display: flex;
@@ -136,7 +136,7 @@ nav {
   font-weight: bold;
 }
 
-/****** Filters ******/
+/*********** Filters ***********/
 
 .search-filters {
   display: flex;
@@ -173,7 +173,7 @@ nav {
   padding-right: 10px;
 }
 
-/****** Search Indication ******/
+/*********** Search Indication ***********/
 
 .search-indication {
   display: flex;
@@ -188,7 +188,7 @@ nav {
   border-radius: 100%;
 }
 
-/**** Cards *****/
+/*********** Cards***********/
 
 .section-title {
   margin: 0;
@@ -218,7 +218,7 @@ nav {
   color: var(--main-bg-color);
 }
 
-/****** Hebergements And Populaires ***********/
+/*********** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
   display: flex;
   justify-content: space-between;
@@ -231,17 +231,24 @@ nav {
   box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+/*********** Hebergements ***********/
 
 .hebergements {
   width: 65%;
 }
 
 .hebergements-title {
-  display: flex;
+  /*  display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center;*/
   margin-bottom: 33px;
+}
+
+.hebergements-more {
+  /*  display: flex;
+  justify-content: space-between;
+  align-items: center;*/
+  margin-top: 33px;
 }
 
 .hebergements-cards {
@@ -282,7 +289,7 @@ nav {
   font-size: 16px;
 }
 
-/****** Populaires ***********/
+/*********** Populaires ***********/
 
 .populaires {
   width: 32%;
@@ -328,7 +335,7 @@ nav {
   margin-bottom: 5px;
 }
 
-/****** Media queries ***********/
+/*********** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
   .hebergements-and-populaires {
