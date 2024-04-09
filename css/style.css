@@ -151,6 +151,8 @@ nav {
 
 input[type="search"] {
     background-color: transparent !important;
+    border-left: none!important;
+    border-right: none!important;
 }
 
 input[type="search"]::-webkit-search-decoration,
