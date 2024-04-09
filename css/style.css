@@ -149,6 +149,10 @@ nav {
 
 /* Safari issue again => https://stackoverflow.com/questions/9421551/how-do-i-remove-all-default-webkit-search-field-styling */
 
+input[type="search"] {
+    background-color: transparent !important;
+}
+
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
