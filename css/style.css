@@ -112,7 +112,7 @@ nav {
   border: none;
   padding: 0px 15px 0px 15px;
   border: 1px solid var(--main-bg-color);
-  width: 175px;
+  width: 185px;
 }
 
 #submit {
@@ -218,6 +218,7 @@ nav {
 }
 
 /*********** Hebergements And Populaires ***********/
+
 .hebergements-and-populaires {
   display: flex;
   justify-content: space-between;
