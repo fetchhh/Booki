@@ -122,6 +122,8 @@ nav {
   border: none;
   padding: 0px 15px 0px 15px;
   border: 1px solid var(--main-bg-color);
+  border-left: none;
+  border-right: none;
   width: 185px;
 }
 
@@ -495,14 +497,11 @@ nav {
     right: 5px;
     border-radius: 15px;
     filter: drop-shadow(0px 3px 5px rgba(0, 4, 0, 0.4));
+    /* Safari issue */ 
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
-/*  #submit i {
-    text-align: center;
-  }*/
 
   #submit span {
     display: none;
