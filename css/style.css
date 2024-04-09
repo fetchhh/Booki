@@ -34,7 +34,9 @@ a {
 }
 
 ul {
+  padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 
 /*********** Header ***********/
@@ -60,7 +62,6 @@ nav {
 .navigation-header ul {
   display: flex;
   justify-content: flex-start;
-  list-style-type: none;
 }
 
 .navigation-header ul li {
@@ -79,12 +80,16 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 35px;
-  line-height: 18px;
   margin-bottom: 20px;
+}
+
+.search-title p {
+  margin: 0;
 }
 
 .search-title h1 {
   font-size: 22px;
+  margin: 0 0 10px 0;
 }
 
 /*********** Search Bar ***********/
@@ -365,6 +370,27 @@ nav {
 
 .activites-title {
   margin: 33px 0 25px 0;
+}
+
+/*********** Footer Container ***********/
+
+.footer-container {
+  display: flex;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: var(--main-bg-color);
+}
+
+.footer-container h2 {
+  font-size: 18px;
+}
+
+.footer-container div {
+  width: 35%;
+}
+
+.links-container ul li {
+  padding: 5px 0 5px 0;
 }
 
 /*********** Media queries ***********/
