@@ -1,6 +1,8 @@
 /*********** General ***********/
 * {
   font-family: "Raleway", sans-serif;
+  /* Bullshit https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
+  box-sizing: border-box;
 }
 
 :root {
@@ -23,7 +25,6 @@ body {
   width: 100%;
   max-width: 1440px;
   padding: 0 50px;
-  box-sizing: border-box;
 }
 
 a {
@@ -112,8 +113,6 @@ nav {
   padding: 0px 15px 0px 15px;
   border: 1px solid var(--main-bg-color);
   width: 175px;
-  /* Bullshit https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
-  box-sizing: border-box;
 }
 
 #submit {
@@ -228,7 +227,6 @@ nav {
   background-color: var(--main-bg-color);
   border-radius: 20px;
   padding: 30px;
-  box-sizing: border-box;
 }
 
 /*********** Hebergements ***********/
@@ -238,16 +236,10 @@ nav {
 }
 
 .hebergements-title {
-  /*  display: flex;
-  justify-content: space-between;
-  align-items: center;*/
   margin-bottom: 33px;
 }
 
 .hebergements-more {
-  /*  display: flex;
-  justify-content: space-between;
-  align-items: center;*/
   margin-top: 33px;
 }
 
@@ -273,7 +265,6 @@ nav {
   padding-left: 15px;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
 }
 
 .hebergements-cards .card-subtitle {
@@ -319,7 +310,6 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-sizing: border-box;
 }
 
 .populaires-cards .card-title {
@@ -333,6 +323,47 @@ nav {
 
 .populaires-cards .card-rating {
   margin-bottom: 5px;
+}
+
+/*********** Activities ***********/
+
+.activites {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px;
+}
+
+.activites-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.activites-cards a {
+  width: 23%;
+}
+
+.activites-cards .card {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.activites-cards img {
+  height: 380px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.activites-cards .card-content {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.activites-title {
+  margin: 33px 0 25px 0;
 }
 
 /*********** Media queries ***********/
