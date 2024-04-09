@@ -36,6 +36,8 @@ ul {
   margin: 0;
 }
 
+/****** Header *******/
+
 /****** Navigation Bar ***********/
 
 nav {
@@ -73,7 +75,6 @@ nav {
 /****** Search Container ******/
 
 .search-container {
-  /*    Not sure abt that either*/
   display: flex;
   flex-direction: column;
   gap: 35px;
@@ -122,6 +123,7 @@ nav {
   color: #ffffff;
   border-radius: 0px 15px 15px 0px;
   background-color: var(--main-color);
+  cursor: pointer;
 }
 
 #location:focus {
@@ -186,6 +188,8 @@ nav {
   border-radius: 100%;
 }
 
+/**** Cards *****/
+
 .section-title {
   margin: 0;
   font-size: 22px;
@@ -228,11 +232,58 @@ nav {
 }
 
 /****** Hebergements ***********/
+
 .hebergements {
   width: 65%;
 }
 
+.hebergements-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 33px;
+}
+
+.hebergements-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 250px 250px;
+  gap: 30px;
+}
+
+.hebergements-cards .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.hebergements-cards img {
+  height: 136px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.hebergements-cards .card-content {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.hebergements-cards .card-subtitle {
+  margin: 0;
+}
+
+.hebergements-cards .card-rating {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.hebergements-cards .card-rating i {
+  font-size: 16px;
+}
+
 /****** Populaires ***********/
+
 .populaires {
   width: 32%;
 }
@@ -276,8 +327,6 @@ nav {
 .populaires-cards .card-rating {
   margin-bottom: 5px;
 }
-
-/* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
