@@ -147,8 +147,11 @@ nav {
   font-weight: bold;
 }
 
-input[type="search"] {
-  -webkit-appearance: none;
+/* Safari issue again */
+
+input {
+    -webkit-appearance: none;
+    -webkit-border-radius:0px;
 }
 
 /*********** Filters ***********/
