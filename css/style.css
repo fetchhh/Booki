@@ -1,7 +1,6 @@
 /*********** General ***********/
 * {
   font-family: "Raleway", sans-serif;
-  /* Bullshit https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
   box-sizing: border-box;
 }
 
@@ -80,7 +79,6 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 35px;
-  margin-bottom: 20px;
 }
 
 .search-title p {
@@ -105,7 +103,11 @@ nav {
 }
 
 .search-bar .fa-location-dot {
-  padding: 17px;
+  height: 49px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #000000;
   font-size: 18px;
   background-color: var(--main-bg-color);
@@ -152,12 +154,7 @@ nav {
 input[type="search"] {
   -webkit-appearance: none;
   -webkit-border-radius: 0px;
-}
-
-input[type="search"] {
   background-color: transparent !important;
-  border-left: none !important;
-  border-right: none !important;
 }
 
 input[type="search"]::-webkit-search-decoration,
@@ -289,6 +286,10 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .hebergements-more {
   margin-top: 33px;
+}
+
+.hebergements-more h2 {
+  font-size: 18px;
 }
 
 .hebergements-cards {
@@ -448,6 +449,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
 /*********** Media queries ***********/
 
+/* 2 columns instead of 3 coz it just doesn't fit  */
+
 /* Small devices (phones, less than 1320px) */
 @media (max-width: 1420px) {
   .hebergements-cards {
@@ -458,9 +461,10 @@ input[type="search"]::-webkit-search-results-decoration {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
   /*********** Filters ***********/
-
-  .flex-filters a {
-    padding: 9px 9px;
+  .search-filters {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
 
   /*********** Hebergements And Populaires ***********/
@@ -484,7 +488,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .populaires {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   .populaires-cards {
@@ -530,7 +534,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
   nav {
     flex-direction: column;
-    padding-top: 20px;
+    margin-top: 20px;
   }
 
   .logo-header {
@@ -555,7 +559,7 @@ input[type="search"]::-webkit-search-results-decoration {
   /*********** Search Container ***********/
 
   .search-container {
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 0 25px;
     gap: 25px;
   }
@@ -581,8 +585,6 @@ input[type="search"]::-webkit-search-results-decoration {
     right: 5px;
     border-radius: 15px;
     filter: drop-shadow(0px 3px 5px rgba(0, 4, 0, 0.4));
-
-    /* Safari issue */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -618,7 +620,6 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 
   .flex-filters a {
-    padding: 15px 15px;
     font-size: 14px;
   }
 
