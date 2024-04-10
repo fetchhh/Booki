@@ -301,11 +301,6 @@ input[type="search"]::-webkit-search-results-decoration {
 .hebergements-cards .card {
   display: flex;
   flex-direction: column;
-  width: 100%;
-}
-
-.hebergements-cards a {
-  width: 100%;
 }
 
 .hebergements-cards img {
