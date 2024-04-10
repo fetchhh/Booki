@@ -551,7 +551,7 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 
   .navigation-header ul li:hover {
-    border: none;
+    border: 2px solid transparent;
     border-bottom: 2px solid var(--main-color);
   }
 
