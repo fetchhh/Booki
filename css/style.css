@@ -1,4 +1,5 @@
 /*********** General ***********/
+
 * {
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
@@ -546,7 +547,7 @@ input[type="search"]::-webkit-search-results-decoration {
     text-align: center;
   }
 
-  .navigation-header ul:li:hover {
+  .navigation-header ul li:hover {
     border: none;
     border-bottom: 2px solid var(--main-color);
   }
