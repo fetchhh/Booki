@@ -79,6 +79,7 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 35px;
+  margin-bottom: 20px;
 }
 
 .search-title p {
@@ -561,6 +562,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .search-container {
     margin-top: 20px;
+    margin-bottom: 0;
     padding: 0 25px;
     gap: 25px;
   }
