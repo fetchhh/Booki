@@ -555,7 +555,7 @@ input[type="search"]::-webkit-search-results-decoration {
   /*********** Search Container ***********/
 
   .search-container {
-    margin-top: 30px;
+    margin-top: 35px;
     margin-bottom: 0;
     padding: 0 25px;
     gap: 25px;
