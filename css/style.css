@@ -150,23 +150,22 @@ nav {
 /* Safari issue again => https://stackoverflow.com/questions/9421551/how-do-i-remove-all-default-webkit-search-field-styling */
 
 input[type="search"] {
-    -webkit-appearance: none;
-    -webkit-border-radius:0px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
 }
 
 input[type="search"] {
-    background-color: transparent !important;
-    border-left: none!important;
-    border-right: none!important;
+  background-color: transparent !important;
+  border-left: none !important;
+  border-right: none !important;
 }
 
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
-  -webkit-appearance:none;
+  -webkit-appearance: none;
 }
-
 
 /*********** Filters ***********/
 
@@ -186,15 +185,24 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .flex-filters {
   display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.flex-filters div {
+  display: flex;
   gap: 15px;
 }
 
 .flex-filters a {
-  font-size: 17px;
-  font-weight: bold;
-  padding: 12px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 15px 15px;
   border-radius: 50px;
   border: 2px solid var(--main-bg-color);
+  font-size: 17px;
+  font-weight: bold;
 }
 
 .flex-filters a:hover {
@@ -213,12 +221,16 @@ input[type="search"]::-webkit-search-results-decoration {
   gap: 10px;
 }
 
-/* Gotta fix this shit too (not sized properly) */ 
+/* Gotta fix this shit too (not sized properly) */
 
 .search-indication i {
-  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #d9d9d9;
-  padding: 4px 9px 4px 9px;
+  height: 24px;
+  width: 24px;
+  font-size: 12px;
   border-radius: 100%;
 }
 
@@ -281,7 +293,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .hebergements-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
   grid-template-rows: 250px 250px;
   gap: 30px;
 }
@@ -289,6 +301,11 @@ input[type="search"]::-webkit-search-results-decoration {
 .hebergements-cards .card {
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+
+.hebergements-cards a {
+  width: 100%;
 }
 
 .hebergements-cards img {
@@ -392,9 +409,16 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .activites-cards .card-content {
-  padding-left: 15px;
   display: flex;
   flex-direction: column;
+  height: 59px;
+}
+
+.activites-cards .card-txt {
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .activites-title {
@@ -423,15 +447,40 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 /*********** Media queries ***********/
+
+/* Small devices (phones, less than 1320px) */
+@media (max-width: 1420px) {
+  .hebergements-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+  /*********** Filters ***********/
+
+  .flex-filters a {
+    padding: 9px 9px;
+  }
+
+  /*********** Hebergements And Populaires ***********/
+
   .hebergements-and-populaires {
     flex-direction: column;
   }
 
+  /*********** Hebergements ***********/
+
   .hebergements {
     width: 100%;
   }
+
+  .hebergements-cards {
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 13px;
+  }
+
+  /*********** Populaires ***********/
 
   .populaires {
     width: 100%;
@@ -455,10 +504,22 @@ input[type="search"]::-webkit-search-results-decoration {
   .populaires-cards .card-subtitle {
     font-size: 13px;
   }
+
+  /*********** Activities ***********/
+
+  .activites-cards img {
+    height: 200px;
+  }
+
+  .activites-cards .card-content {
+    height: 70px;
+  }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+  /*********** Body ***********/
+
   .main-container {
     padding: 0;
   }
@@ -506,7 +567,7 @@ input[type="search"]::-webkit-search-results-decoration {
   /*********** Search Bar ***********/
 
   #location {
-    width: 275px;
+    width: 100%;
   }
 
   .search-bar {
@@ -520,7 +581,8 @@ input[type="search"]::-webkit-search-results-decoration {
     right: 5px;
     border-radius: 15px;
     filter: drop-shadow(0px 3px 5px rgba(0, 4, 0, 0.4));
-    /* Safari issue */ 
+
+    /* Safari issue */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -547,10 +609,16 @@ input[type="search"]::-webkit-search-results-decoration {
     justify-content: center;
   }
 
+  .flex-filters div {
+    width: 100%;
+  }
+
+  .flex-filters div a {
+    width: 50%;
+  }
+
   .flex-filters a {
-    /* Not sure abt this part yet */
     padding: 15px 15px;
-    width: 162px;
     font-size: 14px;
   }
 
@@ -607,6 +675,10 @@ input[type="search"]::-webkit-search-results-decoration {
   .activites-cards {
     flex-direction: column;
     gap: 15px;
+  }
+
+  .activites-cards .card-content {
+    height: 59px;
   }
 
   .activites-cards a {
