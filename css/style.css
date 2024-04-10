@@ -385,12 +385,13 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .activites-cards {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .activites-cards a {
-  width: 23%;
+  width: 100%;
 }
 
 .activites-cards .card {
@@ -401,6 +402,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .activites-cards img {
   height: 380px;
+  width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -677,7 +679,7 @@ input[type="search"]::-webkit-search-results-decoration {
   /*********** Activities ***********/
 
   .activites-cards {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 15px;
   }
 
