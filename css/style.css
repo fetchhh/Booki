@@ -221,13 +221,13 @@ input[type="search"]::-webkit-search-results-decoration {
 
 /* Gotta fix this shit too (not sized properly) */
 
-.search-indication i {
+.search-indication .fa-info {
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #d9d9d9;
-  height: 24px;
-  width: 24px;
+  height: 25px;
+  width: 25px;
   font-size: 12px;
   border-radius: 100%;
 }
