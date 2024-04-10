@@ -619,6 +619,10 @@ input[type="search"]::-webkit-search-results-decoration {
     font-size: 14px;
   }
 
+  .flex-filters a i {
+    font-size: 18px;
+  }
+
   /*********** Hebergements And Populaires ***********/
 
   .hebergements-and-populaires {
