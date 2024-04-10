@@ -150,7 +150,7 @@ nav {
   font-weight: bold;
 }
 
-/* Safari issue again => https://stackoverflow.com/questions/9421551/how-do-i-remove-all-default-webkit-search-field-styling */
+/* Remove native input appearance */ 
 
 input[type="search"] {
   -webkit-appearance: none;
@@ -218,8 +218,6 @@ input[type="search"]::-webkit-search-results-decoration {
   align-items: center;
   gap: 10px;
 }
-
-/* Gotta fix this shit too (not sized properly) */
 
 .search-indication .fa-info {
   display: flex;
