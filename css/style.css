@@ -288,7 +288,7 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-top: 33px;
 }
 
-.hebergements-more h2 {
+.hebergements-more h3 {
   font-size: 18px;
 }
 
@@ -471,6 +471,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .hebergements-and-populaires {
     flex-direction: column;
+    gap: 20px;
   }
 
   /*********** Hebergements ***********/
@@ -627,6 +628,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .hebergements-and-populaires {
     flex-direction: column-reverse;
+    gap: 0;
   }
 
   .hebergements-and-populaires section {
