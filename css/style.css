@@ -307,10 +307,14 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .hebergements-cards img {
   height: 130px;
-  min-height: 124px;
+  min-height: 130px;
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+
+.hebergements-cards .card-title {
+  margin: 10px 0 10px 0;
 }
 
 .hebergements-cards .card-content {
@@ -456,7 +460,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .hebergements-cards h3 {
     font-size: 14px;
-    margin: 5px 0 5px 0;
   }
 
   .hebergements-cards .card-subtitle {
@@ -495,7 +498,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .hebergements-cards h3 {
     font-size: 16px;
-    margin: 10px 0 10px 0;
   }
 
   .hebergements-cards .card-subtitle {
