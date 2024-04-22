@@ -492,7 +492,6 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 
   .hebergements-cards {
-    grid-template-columns: repeat(3, 1fr);
     gap: 13px;
   }
 
